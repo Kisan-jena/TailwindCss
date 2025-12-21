@@ -9,9 +9,9 @@
 
 .container{
   padding: 0px 16px;
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
-  height: 100vh; 
+  height: 100%; 
   position: relative;
 
   /* border-left: 1px;
@@ -27,6 +27,7 @@
 
 .layout {
   min-height: 100vh;
+  position: relative;
   background:
     /* main top light */
     radial-gradient(1000px 500px at 50% -180px,
@@ -45,6 +46,14 @@
       #e6effd 0%,
       #d8ecff 45%,
       #ebf3ff 100%);
+}
+
+.layout-lines-container{
+  max-width:1040px ;
+  margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  inset: 0;
 }
 
 .navbar-root{
@@ -174,22 +183,114 @@
 
 .left-line {
   height: 100%;
-  width: 0.5px;
-  
-  background: linear-gradient(to bottom, #d4d4d4, #dadada);
-
+  width: 1px;
+  background: linear-gradient(to bottom, #949494, #dadada);
   position: absolute;
   left: 2px;
-  opacity: 0.5px;
+  opacity: 0.5;
 }
 
 .right-line {
-  height: 100vh;
-  width: 0.5px;
-
-  background: linear-gradient(to bottom, #d4d4d4, #dadada);
-
-  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, #949494, #dadada);
   right: 2px;
-  opacity: 0.5px;
+  position: absolute;
+  opacity: 0.5;
 }
+
+.top-line{
+  height: 0.5px;
+  width: 100%;
+  background: linear-gradient(to bottom, #949494, #dadada);
+  top: -16px;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.hero-img-container{
+  position: relative;
+  height: auto;
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image{
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+
+  object-fit: cover;
+}
+
+/* 
+.trusted-section {
+  max-width: 1000px;
+  padding-top: 100px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.trusted-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 45px;
+  display: block;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+.companies-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.companies-track {
+  display: flex;
+  gap: 70px;
+  animation: scroll-left 30s linear infinite;
+  width: fit-content;
+  align-items: center;
+}
+
+.companies-carousel:hover .companies-track {
+  animation-play-state: paused;
+}
+
+.company-item {
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9ca3af;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  padding: 8px 0;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
+}
+
+.companies-carousel:hover .company-item:hover {
+  color: #374151;
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
