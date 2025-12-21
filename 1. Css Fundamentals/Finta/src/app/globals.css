@@ -26,7 +26,7 @@
 
 
 .layout {
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
   background:
     /* main top light */
@@ -216,6 +216,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .hero-image{
