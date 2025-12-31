@@ -17,7 +17,7 @@ const page = () => {
       </Container>
 
       <div className="bg-amber-00 flex justify-center relative w-full">
-        <div className="h-px w-full absolute inset-x-0 
+        <div className="h-px w-full absolute inset-x-0
         bg-linear-to-r from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none z-0"
         />
         <div className="max-w-7xl mx-auto p-4 ">
