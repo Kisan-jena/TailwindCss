@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="bg-red-00 flex w-full flex-col items-center justify-center py-45">
-      <h1 className="max-w-3xl bg-linear-to-b from-neutral-50 to-neutral-500 bg-clip-text text-center text-7xl leading-tight font-bold tracking-tight text-transparent">
+      <h1 className="max-w-3xl bg-linear-to-tr from-neutral-50 to-neutral-500 bg-clip-text text-center text-7xl leading-tight font-bold tracking-tight text-transparent">
         Unleash the power of intuitive finance
       </h1>
       <p className="bg-amber-00 mx-auto mt-5 max-w-2xl text-center text-xl font-normal text-[#808188]">
