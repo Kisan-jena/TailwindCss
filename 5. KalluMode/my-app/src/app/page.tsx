@@ -1,8 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 export default function page() {
+  const { theme, setTheme } = useTheme();
+  
   const Logos = [
     {
       name: 'ChatGPT (OpenAI)',
@@ -22,12 +25,8 @@ export default function page() {
     },
   ];
 
-  const toogle = () => {
-    const currentTheme = document.documentElement.classList.contains('dark')
-      ? 'light'
-      : 'dark';
-    document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', currentTheme);
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
   return (
     // <div className="relative  h-full w-full flex items-center justify-center">
@@ -83,8 +82,8 @@ export default function page() {
           </p>
         </div>
         <button
-          onClick={toogle}
-          className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 borde text-[10px] text-neutral-500 mt-2 ml-2 hover:bg-neutral-200 cursor-pointer"
+          onClick={toggleTheme}
+          className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 borde text-[10px] text-neutral-500 mt-2 ml-2 dark:hover:bg-neutral-950 hover:bg-neutral-200 cursor-pointer"
         >
           Switch me
         </button>
